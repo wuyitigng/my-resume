@@ -5,28 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>吳憶婷的個人履歷</title>
     <style>
-        :root { --primary-color: #ff9a9e; --bg-color: #fff5f5; --text-color: #4a4a4a; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 40px 20px; }
-        .resume-card { max-width: 600px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 5px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        :root {
+            --primary-color: #ff9a9e; /* 時尚粉色 */
+            --bg-color: #fff5f5;
+            --text-color: #4a4a4a;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+        .resume-card { 
+            max-width: 600px; 
+            margin: auto; 
+            background: white; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            text-align: center;
+        }
+        
+        /* 照片樣式 */
+        .profile-img { 
+            width: 180px; 
+            height: 180px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 5px solid #fff; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+            margin-bottom: 20px; 
+        }
+        
         h1 { color: var(--primary-color); font-size: 2.5em; margin-bottom: 5px; }
-        .section { margin-bottom: 25px; border-left: 4px solid var(--primary-color); padding-left: 15px; text-align: left; }
-        .section-title { font-weight: bold; font-size: 1.2em; color: var(--primary-color); margin-bottom: 10px; }
-        .tag { display: inline-block; background: #ffe4e6; color: #f43f5e; padding: 5px 12px; border-radius: 15px; margin: 3px; font-size: 0.9em; }
+        .subtitle { color: #999; margin-bottom: 30px; letter-spacing: 2px; }
+        
+        .section { 
+            margin-bottom: 25px; 
+            border-left: 4px solid var(--primary-color); 
+            padding-left: 15px; 
+            text-align: left; 
+        }
+        .section-title { 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            color: var(--primary-color); 
+            margin-bottom: 10px; 
+        }
+        .info-item { margin: 8px 0; line-height: 1.6; }
+        
+        /* 技能標籤樣式 */
+        .tag { 
+            display: inline-block; 
+            background: #ffe4e6; 
+            color: #f43f5e; 
+            padding: 5px 12px; 
+            border-radius: 15px; 
+            margin: 3px; 
+            font-size: 0.9em; 
+        }
+        .contact-link { color: #f43f5e; text-decoration: none; }
     </style>
 </head>
 <body>
+
     <div class="resume-card">
-        <img src="images/me.jpg" alt="吳憶婷的照片" class="profile-img">
+        <!-- 讀取 images 資料夾下的 me.jpg -->
+        <img src="images/me.jpg" alt="吳憶婷的個人照" class="profile-img">
+        
         <h1>吳憶婷</h1>
+        <div class="subtitle">Wu Yi-Ting</div>
+
         <div class="section">
             <div class="section-title">✨ 個人簡介</div>
-            <p>喜歡化妝與設計造型，希望未來能成為專業造型師。具備美容基礎與證照，個性活潑開朗，熱衷於協助他人完成美麗的改造。</p>
+            <p>喜歡化妝、設計造型，希望未來從事造型師的職業。具有美容基礎，個性活潑開朗、樂於幫人改造外型。</p>
         </div>
+
         <div class="section">
             <div class="section-title">🏫 學歷資訊</div>
-            <p>亞洲大學 - 時尚設計系 1年級 / 學號：AU114054067</p>
+            <div class="info-item"><strong>學校：</strong> 亞洲大學</div>
+            <div class="info-item"><strong>系級：</strong> 時尚設計系 1 年級</div>
+            <div class="info-item"><strong>學號：</strong> AU114054067</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💄 專業技能</div>
+            <span class="tag">美容丙級證照</span>
+            <span class="tag">舞蹈表演</span>
+            <span class="tag">造型設計</span>
+            <span class="tag">彩妝美髮</span>
+            <span class="tag">美感分析</span>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💼 工作與社團經歷</div>
+            <div class="info-item"><strong>服飾業：</strong> 銷售店員</div>
+            <div class="info-item)<strong>餐飲業：</strong> 吧台人員</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📞 聯絡方式</div>
+            <div class="info-item">📧 Email: <a href="mailto:winnie20060518@gmail.com" class="contact-link">winnie20060518@gmail.com</a></div>
+            <div class="info-item">📱 電話: 0971883800</div>
         </div>
     </div>
+
 </body>
 </html>
