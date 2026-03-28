@@ -2,8 +2,8 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>吳憶婷的個人履歷</title>
+    
     <style>
         :root {
             --primary-color: #ff9a9e; /* 時尚粉色 */
@@ -11,71 +11,52 @@
             --text-color: #4a4a4a;
         }
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: var(--bg-color); 
+            font-family: Arial, sans-serif; 
+            background-color: #f7f7f7;
             color: var(--text-color); 
-            margin: 0; 
+            margin: 40px; 
             padding: 40px 20px; 
         }
-        .resume-card { 
-            max-width: 600px; 
+        .container { 
+            max-width: 700px; 
             margin: auto; 
             background: white; 
-            padding: 40px; 
-            border-radius: 20px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
             text-align: center;
         }
         
-        /* 照片樣式 */
-        .profile-img { 
-            width: 180px; 
+        img { 
+            width: 150px; 
             height: 180px; 
             border-radius: 50%; 
-            object-fit: cover; 
-            border: 5px solid #fff; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
             margin-bottom: 20px; 
         }
         
-        h1 { color: var(--primary-color); font-size: 2.5em; margin-bottom: 5px; }
-        .subtitle { color: #999; margin-bottom: 30px; letter-spacing: 2px; }
-        
-        .section { 
-            margin-bottom: 25px; 
-            border-left: 4px solid var(--primary-color); 
-            padding-left: 15px; 
-            text-align: left; 
-        }
-        .section-title { 
-            font-weight: bold; 
-            font-size: 1.2em; 
-            color: var(--primary-color); 
-            margin-bottom: 10px; 
-        }
-        .info-item { margin: 8px 0; line-height: 1.6; }
-        
-        .tag { 
-            display: inline-block; 
-            background: #ffe4e6; 
-            color: #f43f5e; 
-            padding: 5px 12px; 
-            border-radius: 15px; 
-            margin: 3px; 
-            font-size: 0.9em; 
-        }
-        .contact-link { color: #f43f5e; text-decoration: none; }
+        h1 { 
+            margin-bottom: 10px; }
+        p { 
+            margin-bottom: 5px 0; }
+        a { 
+            color: #0077cc; 
+            text-decoration: none; }
     </style>
 </head>
 <body>
-
-    <div class="resume-card">
+<div class="container">
         <!-- 根據妳目前的檔案名稱 images/me.jpg.jpg -->
         <img src="images/me.jpg.jpg" alt="吳憶婷的個人照" class="profile-img">
         
         <h1>吳憶婷</h1>
         <div class="subtitle">Wu Yi-Ting</div>
-
+        <p>學號:114054067</p>
+        <p>
+          GitHub:
+          <a href="https://wuyiting.github.io/my-resume/resume.html">
+            我的履歷連結
+          </a>
+        </p>
         <div class="section">
             <div class="section-title">✨ 個人簡介</div>
             <p>喜歡化妝、設計造型，希望未來從事造型師的職業。具有美容基礎，個性活潑開朗、樂於幫人改造外型。</p>
